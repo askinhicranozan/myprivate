@@ -15,6 +15,24 @@
     <div class="starter-template">
         <h1>Müşteri Güncelleme Ekranı</h1>
 
+
+        <form class="form-horizontal" id="customerSearchForm" action="#" th:action="@{/api/v1/customer/searchCustomer/}">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">TCKN</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="tcknSearch"/>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="submit" id="btn"
+                            class="btn btn-primary btn-lg">Ara
+                    </button>
+                </div>
+            </div>
+        </form>
+
         <form class="form-horizontal" id="customerForm">
             <div class="form-group form-group-lg">
                 <label class="col-sm-2 control-label">Müşteri Adı</label>
@@ -23,7 +41,7 @@
                 </div>
             </div>
 
-			<div class="form-group form-group-lg">
+            <div class="form-group form-group-lg">
                 <label class="col-sm-2 control-label">Müşteri Soyadı</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="customerSurname"/>
@@ -67,8 +85,8 @@
             </div>
         </form>
 
-	<div id="feedback"></div>
-    </div>
+        <div id="feedback"></div>
+   </div>
 
 </div>
 
