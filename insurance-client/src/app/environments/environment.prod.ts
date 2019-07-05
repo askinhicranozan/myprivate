@@ -1,0 +1,20 @@
+export const environment = {
+    production: true,
+    API_HOST: 'https://webbox.biletix.com/crmapi',
+    ISM_API_HOST: 'https://webbox.biletix.com/ismapi',
+    PRINT_TICKET_HOST: 'https://localhost:27015',
+    CPU_HOST: 'https://localhost:5556/clientid',
+    POS_HOST: 'https://localhost:27002',
+    EVENT_GROUP_ID: '142328335',
+    SOLR_HOST: 'https://webbox.biletix.com/solr',
+    EVENT_IMAGE_ROOT: 'https://webbox.biletix.com/static/images/live/event/eventimages/',
+    GROUP_IMAGE_ROOT: 'https://webbox.biletix.com/static/images/live/event/groupimages/',
+    MEMPROG_IMAGE_ROOT: 'https://webbox.biletix.com/static/images/membercards/',
+    TIMEOUT: 3600,
+    WEBSOCK_EXTEND_TIME: 540,
+    CPU: "1004",
+    CC_NUMBER_READONLY: true,
+    CVV_READONLY : true,
+    IP_CHECK_URL: 'https://ipinfo.io',
+    JENKINS_BUILD_NUMBER : '_JENKINS_BUILD_NUMBER_'
+};

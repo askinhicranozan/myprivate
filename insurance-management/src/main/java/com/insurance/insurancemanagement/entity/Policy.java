@@ -36,9 +36,8 @@ public class Policy {
 	@Column(name = "productName")
 	private String productName;
 	
-	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "time")
-	private Date time;
+	private String time;
 
 	@Column(name = "price")
 	private BigDecimal price;

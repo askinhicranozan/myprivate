@@ -27,7 +27,8 @@ public class PolicyDTO {
 	
 	@NotEmpty(message = "Please provide a product name")
 	private String productName;
-	private Date time; // vade
+	
+	private String time; // vade
 	
 	@NotNull(message = "Please provide a price")
     @DecimalMin("0.01")

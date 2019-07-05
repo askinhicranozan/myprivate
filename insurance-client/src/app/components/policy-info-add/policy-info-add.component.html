@@ -1,0 +1,88 @@
+<section class="policy-form new-policy-form info">
+	<div>
+		<content class="sub-page policy-page">
+		<section class="sub-page-content policy-content">
+			<h2>Poliçe Ekleme Sayfası</h2>
+			<p-tabView orientation="left" class="red-tab-view" [activeIndex]="tabIndex"> 
+			<p-tabPanel header="Ekle" class="panel-search-policy">
+			<div *ngIf="policyForm" class="ui-g-8">
+				<form [formGroup]="policyForm">
+					<div class="ui-g">
+						<div class="ui-g-6">
+						
+					<div class="ui-g policy-form-line">
+								<div class="ui-g-4">
+									<span>Müşteri Adı*</span>
+								</div>
+								<div class="ui-g-8">
+									<input pInputText type="text" formControlName="customerName" />
+								</div>
+							</div>
+							
+							<div class="ui-g policy-form-line">
+								<div class="ui-g-4">
+									<span>Açıklama</span>
+								</div>
+								<div class="ui-g-8">
+									<input pInputText type="text" formControlName="description" />
+								</div>
+							</div>
+
+							<div class="ui-g policy-form-line">
+								<div class="ui-g-4">
+									<span>Ürün tipi*</span>
+								</div>
+								<div class="ui-g-8">
+									<input pInputText type="text" formControlName="type" />
+								</div>
+							</div>
+
+							<div class="ui-g policy-form-line">
+								<div class="ui-g-4">
+									<span>Ürün adı*</span>
+								</div>
+								<div class="ui-g-8">
+									<input pInputText type="text" formControlName="productName" />
+								</div>
+							</div>
+
+							<div class="ui-g policy-form-line">
+								<div class="ui-g-4">
+									<span>Vade</span>
+								</div>
+								<div class="ui-g-8">
+									<input pInputText type="text" formControlName="time" />
+								</div>
+							</div>
+
+							<div class="ui-g policy-form-line">
+								<div class="ui-g-4">
+									<span>Tutar*</span>
+								</div>
+								<div class="ui-g-8">
+									<input pInputText type="text" formControlName="price" />
+								</div>
+							</div>
+
+
+
+						</div>
+
+
+					</div>
+				</form>
+
+
+				<button pButton type="button" (click)="registrationGiftCard()"
+					label="kAYDET"></button>
+
+
+
+			</div>
+			</p-tabPanel> </p-tabView>
+
+		</section>
+		</content>
+	</div>
+
+</section>
